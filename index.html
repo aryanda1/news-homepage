@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay hidden" onclick="toggleStatus()"></div>
+    <header>
+      <img alt="logo" src="assets/images/logo.svg" />
+      <img
+        id="menu"
+        alt="menu"
+        src="assets/images/icon-menu.svg"
+        onclick="toggleStatus()"
+      />
+      <img
+        id="menu_close"
+        class="hidden"
+        alt="menu-close"
+        src="assets/images/icon-menu-close.svg"
+        onclick="toggleStatus()"
+      />
+      <ul class="nav_bar hidden">
+        <li onclick="toggleStatus()"><a href="#">Home</a></li>
+        <li onclick="toggleStatus()"><a href="#">New</a></li>
+        <li onclick="toggleStatus()"><a href="#">Popular</a></li>
+        <li onclick="toggleStatus()"><a href="#">Trending</a></li>
+        <li onclick="toggleStatus()"><a href="#">Categories</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <picture>
+        <source
+          media="(min-width: 778px)"
+          srcset="assets/images/image-web-3-desktop.jpg"
+        />
+        <img src="assets/images/image-web-3-mobile.jpg" alt="web 3.0 Image" />
+      </picture>
+      <h1 class="heading">The Bright Future of Web 3.0?</h1>
+      <div class="content">
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise?
+        <a href="#" class="content_link">READ MORE</a>
+      </div>
+      <div class="side_page">
+        <h2>New</h2>
+        <div class="side_page_content">
+          <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="side_page_content">
+          <h3><a href="#">The Downsides of AI Artistry</a></h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class="side_page_content">
+          <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+      <div class="bottom_page">
+        <div class="bottom_page_content">
+          <img src="assets/images/image-retro-pcs.jpg" />
+          <div class="side_content">
+            <h2>01</h2>
+            <h3><a href="#">Reviving Retro PCs</a></h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="bottom_page_content">
+          <img src="assets/images/image-top-laptops.jpg" />
+          <div class="side_content">
+            <h2>02</h2>
+            <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="bottom_page_content">
+          <img src="assets/images/image-gaming-growth.jpg" />
+          <div class="side_content">
+            <h2>03</h2>
+            <h3><a href="#">The Growth of Gaming</a></h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
